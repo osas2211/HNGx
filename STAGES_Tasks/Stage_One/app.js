@@ -45,7 +45,7 @@ app.get("/api", async (req, res) => {
       return res.json({
         slack_name,
         current_day,
-        utc_time: adjustedUTCTime,
+        utc_time: adjustedUTCTime.toISOString().split(".")[0] + "Z",
         track,
         github_file_url:
           "https://github.com/osas2211/HNGx/blob/master/STAGES_Tasks/Stage_One/app.js",
