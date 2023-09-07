@@ -48,7 +48,7 @@ app.get("/api", async (req, res) => {
         utc_time: adjustedUTCTime,
         track,
         github_file_url:
-          "https://github.com/username/repo/blob/main/file_name.ext",
+          "https://github.com/osas2211/HNGx/blob/master/STAGES_Tasks/Stage_One/app.js",
         github_repo_url: "https://github.com/osas2211/HNGx",
         status_code: 200,
       })
