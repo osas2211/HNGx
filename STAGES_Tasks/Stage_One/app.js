@@ -31,7 +31,7 @@ app.get("/api", async (req, res) => {
     const current_day = weekdays[new Date().getDay()]
     const current_time = new Date()
     const getUTCMinutes = current_time.getUTCMinutes()
-    const accuracyValue = 2
+    const accuracyValue = 0
     const newUTCMinutes = getUTCMinutes + accuracyValue
     const adjustedUTCTime = new Date()
     adjustedUTCTime.setUTCMinutes(newUTCMinutes)
